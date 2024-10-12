@@ -1,0 +1,1260 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    position: relative;
+
+}
+
+#check {
+    display: none;
+}
+
+/* Header Styling */
+.header {
+    max-width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-div {
+    width: 105px;
+    height: 105px;
+    margin-top: 3px;
+}
+
+.logo-div img {
+    width: 100px;
+    height: 100px;
+}
+
+.icons {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#menuicon {
+    display: block;
+}
+
+#closeicon {
+    display: none;
+}
+
+/* Navigation Bar */
+.navBar {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: #333;
+    font-family: "Playwrite DE Grund", system-ui;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.navlinks:hover {
+    color: #2e75a1;
+    text-decoration: underline;
+    text-underline-offset: 49px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #333;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.navicons {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navicons:hover {
+    color: #d72a2a;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*----------- Introduction section ----------*/
+.introSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("images/flower-office-shop-arrangement.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 650px;
+    padding: 20px 20px;
+    bottom: 0px;
+}
+
+.introImages {
+    display: flex;
+    gap: 10px;
+    width: 45%;
+    height: 555px;
+    position: relative;
+    border-color: white;
+}
+
+.introImg {
+    border-radius: 20px;
+}
+
+#introImg1 {
+    width: 350px;
+    height: 350px;
+}
+
+#introImg2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 200px;
+    left: 305px;
+}
+
+.introContent {
+    text-align: center;
+    width: 50%;
+}
+
+#shop-name {
+    color: rgb(211, 208, 208);
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Playwrite DE Grund", system-ui;
+}
+
+#intropara {
+    color: rgb(211, 208, 208);
+    font-size: 20px;
+    font-family: "Playwrite DE Grund", system-ui;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ---------collections---------------------- */
+.collections {
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.collections h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Updock", system-ui;
+    text-align: center;
+    text-shadow: 8px 8px 15px;
+}
+
+.collections div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgCollec {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 13px;
+}
+
+.imgCollec img {
+    width: 100%;
+    height: 350px;
+    display: block;
+    border-radius: 10px;
+}
+
+.imgCollec h5 {
+    font-family: cursive;
+    text-align: center;
+}
+
+.imgCollec:hover {
+    background-color: rgb(243, 179, 123);
+}
+
+/* ------------------------------------------- */
+/* ------------banners------------------------- */
+.banners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+}
+
+.bannerImg {
+    width: 510px;
+    height: 160px;
+    padding: auto;
+    margin: auto;
+}
+
+.bannerImages {
+    width: 100%;
+    height: 150px;
+}
+
+.bannerImages:hover {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+}
+
+/* ------------------------------------------- */
+/*---------- about section --------------*/
+.about {
+    width: 100%;
+    height: 600px;
+}
+
+.aboutCol {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutImg {
+    padding: 15px;
+    width: 680px;
+    height: 500px;
+}
+
+.aboutImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutContent {
+    text-align: center;
+    padding: 40px;
+    width: 680px;
+    height: 500px;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Updock", system-ui;
+    text-align: center;
+    text-shadow: 8px 8px 15px;
+}
+
+.aboutContent p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    font-family: "Playwrite DE Grund", system-ui;
+}
+
+/* -------------------------------- */
+/* -------------occasions------------ */
+.occasions {
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.occasions h1 {
+    height: 80px;
+    text-align: center;
+    font-family: "Updock", system-ui;
+    font-size: 60px;
+    text-shadow: 8px 8px 15px;
+}
+
+.occasionRow {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 620px;
+    padding: 50px;
+
+}
+
+.OcassionContent {
+    width: 400px;
+}
+
+.OcassionContent img {
+    width: 100%;
+    height: 410px;
+}
+
+.OcassionContent h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(110, 110, 110);
+    text-shadow: 8px 8px 15px;
+
+}
+
+.OcassionContent p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(110, 110, 110);
+}
+
+.OcassionContent:hover {
+    box-shadow: 8px 8px 15px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* -----------contact Us ------------------*/
+.contact {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contact h1 {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-family: "Updock", system-ui;
+    font-size: 60px;
+    text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.contactIcons {
+    height: 230px;
+    width: 440px;
+    background-color: rgb(239, 174, 174);
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactIcons i {
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    height: 45px;
+}
+
+.contactIcons i:hover {
+    color: rgb(31, 31, 141);
+    cursor: pointer;
+}
+
+.contactIcons i span {
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 200;
+    display: block;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
+/* ------------------------------------------------------------ */
+/* -------------footer--------------- */
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(240, 222, 236);
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#linefooter {
+    border: 1px solid rgb(208, 208, 208);
+    height: 0px;
+}
+
+.footerContent {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resources {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resources h4 {
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
+.resources a {
+    display: block;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 2;
+    text-align: center;
+}
+
+.resources a:hover {
+    color: rgb(124, 122, 122);
+}
+
+.socialMedia {
+    text-align: center;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footerIcons {
+    margin-top: 0px;
+    width: 200px;
+    height: 70px;
+}
+
+.footerIcons a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    padding-top: 4px;
+    border-radius: 50%;
+    border-color: black;
+    color: black;
+    font-size: 25px;
+}
+
+.footerIcons a:hover {
+    background-image: linear-gradient(to bottom right, rgb(243, 169, 181), rgb(195, 87, 87), rgb(206, 72, 175));
+}
+
+.footerIcons a i:hover {
+    color: white;
+    animation: rotate 3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(40deg);
+    }
+
+    20% {
+        transform: rotate(-40deg);
+    }
+
+    40% {
+        transform: rotate(40deg);
+    }
+
+    60% {
+        transform: rotate(-40deg);
+    }
+
+    80% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+.copyright p {
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+    .icons {
+        display: block;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        display: none;
+        padding: 20px 0;
+    }
+
+    /* Toggle NavBar on Checkbox Checked */
+    #check:checked~.header .navBar {
+        display: flex;
+    }
+
+    /* Toggle Menu and Close Icons */
+    #check:checked~.header .icons #menuicon {
+        display: none;
+    }
+
+    #check:checked~.header .icons #closeicon {
+        display: block;
+    }
+
+    .navlinks {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .navlinks:hover {
+        text-underline-offset: 10px;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    /* ------------------------------------ */
+    .introSection {
+        position: absolute;
+        top: 114px;
+        background-image: url("images/row-of-potted-flowers.jpg");
+        width: 100%;
+        background-repeat: repeat-y;
+        height: 1250px;
+    }
+
+    #check:checked~.introSection {
+        top: 499px;
+    }
+
+    .introImages {
+        width: 100%;
+    }
+
+    #introImg1 {
+        width: 100%;
+        z-index: 5;
+    }
+
+    #introImg2 {
+        width: 100%;
+        left: 0px;
+        top: 355px;
+    }
+
+    .introContent {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* ----------------------------------------- */
+    /* ---------collections---------------------- */
+    .collections {
+        position: absolute;
+        top: 950px;
+    }
+
+    #check:checked~.collections {
+        top: 1320px;
+    }
+
+    .collections div {
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .imgCollec {
+        margin: 15px 0;
+    }
+
+    .banners {
+        position: absolute;
+        top: 2050px;
+        bottom: 0px;
+    }
+
+    #check:checked~.banners {
+        top: 2430px;
+    }
+
+    /* ---------about---------- */
+    .about {
+        position: absolute;
+        top: 2530px;
+        bottom: 0px;
+    }
+
+    #check:checked~.about {
+        top: 2970px;
+    }
+
+    /* ----------------------------- */
+    /* -------occasions--------- */
+    .occasions {
+        position: absolute;
+        top: 3150px;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 1750px;
+    }
+
+    #check:checked~.occasions {
+        top: 3599px;
+    }
+
+    .occasionRow {
+        display: flex;
+        flex-direction: column;
+        height: 1667px;
+        align-items: center;
+    }
+
+    .OcassionContent {
+        margin-bottom: 20px;
+    }
+
+    /* --------------------------------- */
+    /* --------------contact----------------------- */
+    .contact {
+        position: absolute;
+        top: 4790px;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+    }
+
+    #check:checked~.contact {
+        top: 5030px;
+    }
+
+    .contactIcons {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        position: absolute;
+        top: 5300px;
+    }
+
+    #linefooter {
+        height: 0px;
+        width: 100%;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #check:checked~.footer {
+        top: 5650px
+    }
+}
+
+@media (min-width:1250px) and (max-width:1295px) {
+    .introContent {
+        width: 500px;
+    }
+
+    .aboutImg {
+        width: 550px;
+    }
+
+    .aboutContent {
+        width: 550px;
+    }
+
+    .occasions {
+        height: 1230px;
+    }
+
+    .occasionRow {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 1040px) and (max-width:1250px) {
+    #introImg1 {
+        width: 300px;
+    }
+
+    #introImg2 {
+        left: 216px;
+        width: 300px;
+    }
+
+    .introContent {
+        width: 450px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .collections div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgCollec {
+        padding: 10px;
+    }
+
+    .aboutImg {
+        width: 500px;
+
+    }
+
+    .aboutImg img {
+        width: 100%;
+    }
+
+    .aboutContent {
+        width: 500px;
+        padding: 20px;
+
+    }
+
+    .aboutContent p {
+        font-size: 18px;
+    }
+
+    .occasions {
+        height: 1230px;
+    }
+
+    .occasionRow {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width:993px) and (max-width:1040px) {
+    .occasions {
+        height: 1230px;
+    }
+
+    .occasionRow {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:865px) and (max-width:1040px) {
+    .introSection {
+        height: 890px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .introImages {
+        width: 100%;
+        height: 640px;
+    }
+
+    .introImg {
+        display: block;
+    }
+
+    #introImg1 {
+        width: 350px;
+        margin-left: 90px;
+    }
+
+    #introImg2 {
+        width: 350px;
+        position: static;
+        margin-top: 280px;
+        margin-left: -100px;
+        z-index: 20;
+    }
+
+    .introContent {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .container div {
+        justify-content: center;
+    }
+
+    .imgCollec {
+        width: 30%;
+        padding: 10px;
+        margin-left: 5px;
+    }
+
+    .aboutImg {
+        width: 400px;
+    }
+
+    .aboutContent {
+        width: 400px;
+    }
+
+    .aboutContent p {
+        font-size: 15px;
+    }
+
+    .contact {
+        top: 4790px;
+    }
+
+    #check:checked~.contact {
+        top: 5230px;
+    }
+
+    .footerContent {
+        gap: 140px;
+    }
+
+}
+
+@media (min-width: 660px) and (max-width: 864px) {
+    .introSection {
+        height: 995px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introImages {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .introImg {
+        display: block;
+    }
+
+    #introImg1 {
+        width: 300px;
+
+    }
+
+    #introImg2 {
+        width: 300px;
+        position: static;
+
+    }
+
+    .introContent {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .collections {
+        top: 1060px;
+    }
+
+    #check:checked~.collections {
+        top: 1450px;
+    }
+
+    .imgCollec {
+        width: 45%;
+        padding: 10px;
+    }
+
+    .banners {
+        top: 2150px;
+    }
+
+    #check:checked~.banners {
+        top: 2545px;
+    }
+
+    .about {
+        top: 2700px;
+    }
+
+    #check:checked~.about {
+        top: 3030px;
+    }
+
+    .aboutContent {
+        height: 330px;
+    }
+
+    .aboutContent p {
+        font-size: 16px;
+    }
+
+    .occasions {
+        top: 3650px;
+    }
+
+    #check:checked~.occasions {
+        top: 3990px;
+    }
+
+    .contact {
+        top: 5320px;
+    }
+
+    #check:checked~.contact {
+        top: 5650px;
+    }
+
+    .footer {
+        top: 5700px;
+    }
+
+    #check:checked~.footer {
+        top: 6090px;
+    }
+}
+
+@media (min-width:417px) and (max-width:660px) {
+    .introSection {
+        height: 1100px;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+
+    }
+
+    .introImages {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .introImg {
+        display: block;
+    }
+
+    #introImg1 {
+        width: 350px;
+    }
+
+    #introImg2 {
+        width: 350px;
+        height: 350px;
+        position: static;
+    }
+
+    .introContent {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .collections {
+        top: 1165px;
+    }
+
+    #check:checked~.collections {
+        top: 1600px;
+    }
+
+    .imgCollec {
+        width: 48%;
+        padding: 10px;
+    }
+
+    .banners {
+        top: 2250px;
+    }
+
+    #check:checked~.banners {
+        top: 2685px;
+    }
+
+    .about {
+        top: 2735px;
+    }
+
+    #check:checked~.about {
+        top: 3165px;
+    }
+
+    .aboutImg {
+        width: 100%;
+    }
+
+    .aboutContent {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutContent p {
+        font-size: 17px;
+    }
+
+    .occasions {
+        top: 3840px;
+    }
+
+    #check:checked~.occasions {
+        top: 4250px;
+    }
+
+    .occasions h1 {
+        width: 100%;
+    }
+
+    .contact {
+        top: 5520px;
+    }
+
+    #check:checked~.contact {
+        top: 5940px;
+    }
+
+    .footer {
+        top: 5950px;
+    }
+
+    #check:checked~.footer {
+        top: 6390px;
+    }
+}
+
+@media (min-width:417px) and (max-width:470px) {
+    .occasions {
+        margin-top: 55px;
+    }
+
+    .occasions h1 {
+        height: auto;
+    }
+
+    .contact {
+        top: 5680px;
+    }
+
+    #check:checked~.contact {
+        top: 6090px;
+    }
+
+    .footer {
+        top: 6090px;
+        height: auto;
+    }
+
+    .resources {
+        width: 50%;
+    }
+
+    #check:checked~.footer {
+        top: 6390px;
+    }
+}
+
+@media (min-width:100px) and (max-width:416px) {
+    .introSection {
+        height: 1300px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .introImages {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .introImg {
+        display: block;
+    }
+
+    #introImg1 {
+        width: 100%;
+    }
+
+    #introImg2 {
+        width: 100%;
+        height: 350px;
+        position: static;
+    }
+
+    .introContent {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .collections {
+        top: 1370px;
+    }
+
+    #check:checked~.collections {
+        top: 1780px;
+    }
+
+    .imgCollec {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banners {
+        top: 3305px;
+    }
+
+    #check:checked~.banners {
+        top: 3695px;
+    }
+
+    .about {
+        top: 3810px;
+    }
+
+    #check:checked~.about {
+        top: 4195px;
+    }
+
+    .aboutContent {
+        height: auto;
+    }
+
+    .aboutContent p {
+        font-size: 17px;
+    }
+
+    .occasions {
+        top: 5250px;
+        height: auto;
+    }
+
+    #check:checked~.occasions {
+        top: 5630px;
+    }
+
+    .occasions h1 {
+        height: auto;
+    }
+
+    .occasionRow {
+        height: auto;
+        width: 100%;
+    }
+
+    .OcassionContent {
+        width: 100%;
+    }
+
+    .contact {
+        top: 7150px;
+    }
+
+    #check:checked~.contact {
+        top: 7499px;
+    }
+
+    .contact h1 {
+        width: 100%;
+    }
+
+    .contactIcons {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .footer {
+        top: 7590px;
+    }
+
+    .resources {
+        width: 85%;
+        height: 150px;
+    }
+
+    #check:checked~.footer {
+        top: 7900px;
+    }
+}
